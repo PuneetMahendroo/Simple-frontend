@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display:block;
+            width:50%;
+            margin:auto;
+        }
+        input{
+            display:block;
+        }
+        input[type="text"]{
+            color:pink;
+        }
+        a[target]{
+            color:red;
+        }
+        li:nth-child(3){
+            color:tomato;
+        }
+        li:nth-child(2n+0){
+            color:brown;
+        }
+        li:nth-child(odd){
+            background-color:beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="https://google.com" target="_blank">Go to google</a>
+        <a href="https://facebook.com">Go to facebook</a>
+        <form action="" class="submission">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">one</li>
+            <li class="item" id="item-2">two</li>
+            <li class="item" id="item-3">three</li>
+            <li class="item" id="item-4">four</li>
+            <li class="item" id="item-5">five</li>
+            <li class="item" id="item-6">six</li>
+            <li class="item" id="item-7">seven</li>
+            <li class="item" id="item-8">eight</li>
+            <li class="item" id="item-9">nine</li>
+            <li class="item" id="item-10">ten</li>
+        </ul>
+    </div>
+</body>
+
+</html>

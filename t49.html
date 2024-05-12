@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in js</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"> </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quo vel inventore quam quidem illo
+            esse, ad minus dignissimos iure veritatis ipsa neque ea mollitia, alias delectus! Cumque, recusandae!
+            Rem quaerat nam magnam iste, voluptatum modi corrupti. Dolor accusamus in assumenda eligendi distinctio
+            non? Corrupti molestias aperiam ex incidunt distinctio.
+        </p>
+    </div>
+    <script>
+        var string = "this";
+        var name = 'Jerry ';
+        var channel = 'Learning JavaScript ';
+        var message = 'leading towards react and angular frameworks ';
+        var temp = `${name} is currently ${channel} and also ${message}`;
+        console.log(string);
+        console.log(name);
+        console.log(name + channel + message);
+        console.log(temp);
+        var len = temp.length;
+        console.log(`the length of name mentioned aboved is ${len}`);
+
+        console.log("Hello \\ World\n and \t surprise");
+
+        document.getElementById('content').innerHTML = '<h3>A small h3 Heading for you </h3>'
+    </script>
+</body>
+
+</html>

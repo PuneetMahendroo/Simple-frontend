@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <p>Some HTML</p>
+    <script>
+        let var1=true;
+        let var2=undefined;
+        let var3=null;
+        console.log(var1);
+        console.log(var2);
+        console.log(var3);
+        let employee = {
+            name : "Buddy",
+            salary : 2,
+            channel : "NiceOne",
+            "channel 2" : "CoolOne",
+        }
+        console.log(employee);
+        console.log(employee.channel);
+        console.log(employee['channel 2']);
+    
+        let name = [9,2,3,"yoyo",undefined];
+        console.log(name);
+        console.log(name.length);
+        name = name.sort();
+        console.log(name);
+        name.push("This is a pushed element");
+        console.log(name);
+
+        let names = new Array(12,5,"zigzag",undefined);
+        console.log(names);
+        console.log(names.length);
+        names = names.sort();
+        console.log(names);
+        names.push("This is a pushed element");
+        console.log(names);
+
+        let array1 = new Array(23);
+        console.log(array1);
+    </script>
+</body>
+</html>
